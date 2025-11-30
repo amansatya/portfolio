@@ -6,6 +6,7 @@ import TechStack from "./sections/TechStack";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import Background from "./components/Background";
 
 import "./styles/globals.css";
 import "./index.css"
@@ -13,6 +14,7 @@ import "./index.css"
 export default function App() {
     return (
         <>
+            <Background />
             <Navbar />
 
             <ScrollToTop />
