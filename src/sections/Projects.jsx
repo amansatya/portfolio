@@ -1,6 +1,6 @@
 export default function Projects() {
     return (
-        <section id="projects" className="min-h-screen">
+        <section id="projects" className="min-h-screen text-white">
             PROJECTS SECTION
         </section>
     );

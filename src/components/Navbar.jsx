@@ -25,14 +25,12 @@ export default function Navbar({ className }) {
             )}
         >
             <Menu setActive={setActive}>
-                {/* Home */}
                 <MenuItem active={active} setActive={setActive} item="Home">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="#home">Go to Home</HoveredLink>
                     </div>
                 </MenuItem>
 
-                {/* About */}
                 <MenuItem active={active} setActive={setActive} item="About">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="#about">Who I Am</HoveredLink>
@@ -40,7 +38,6 @@ export default function Navbar({ className }) {
                     </div>
                 </MenuItem>
 
-                {/* TechStack */}
                 <MenuItem active={active} setActive={setActive} item="TechStack">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="#techstack">Frontend</HoveredLink>
@@ -49,7 +46,6 @@ export default function Navbar({ className }) {
                     </div>
                 </MenuItem>
 
-                {/* Experience */}
                 <MenuItem active={active} setActive={setActive} item="Experience">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="#experience">Work Timeline</HoveredLink>
@@ -58,7 +54,6 @@ export default function Navbar({ className }) {
                     </div>
                 </MenuItem>
 
-                {/* Projects */}
                 <MenuItem active={active} setActive={setActive} item="Projects">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
 
@@ -93,7 +88,6 @@ export default function Navbar({ className }) {
                     </div>
                 </MenuItem>
 
-                {/* Contact */}
                 <MenuItem active={active} setActive={setActive} item="Contact">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="#contact">Email Me</HoveredLink>
@@ -101,7 +95,6 @@ export default function Navbar({ className }) {
                     </div>
                 </MenuItem>
 
-                {/* Socials */}
                 <MenuItem active={active} setActive={setActive} item="Socials">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="https://github.com" target="_blank">
