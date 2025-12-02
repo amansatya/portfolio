@@ -1,26 +1,17 @@
-import FaultyTerminal from './ui/FaultyTerminal';
+import Particles from './ui/Particles';
 
 export default function FaultyBg() {
     return (
-        <div className="fixed inset-0 -z-10 w-full h-full">
-            <FaultyTerminal
-                scale={1.5}
-                gridMul={[2, 1]}
-                digitSize={1.5}
-                timeScale={1}
-                pause={false}
-                scanlineIntensity={1}
-                glitchAmount={1}
-                flickerAmount={1}
-                noiseAmp={1}
-                chromaticAberration={0}
-                dither={0}
-                curvature={0}
-                tint="#00ff99"
-                mouseReact={true}
-                mouseStrength={0.2}
-                pageLoadAnimation={false}
-                brightness={1}
+        <div className="fixed inset-0 w-full h-full pointer-events-auto z-0">
+            <Particles
+                particleColors={['#ffffff', '#ffffff']}
+                particleCount={200}
+                particleSpread={10}
+                speed={0.1}
+                particleBaseSize={100}
+                moveParticlesOnHover={true}
+                alphaParticles={false}
+                disableRotation={false}
             />
         </div>
     );
