@@ -2,8 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
-import Hero from "./sections/Hero";
-import About from "./sections/About";
+import Intro from "./sections/Intro";
 import TechStack from "./sections/TechStack";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
@@ -27,8 +26,7 @@ export default function App() {
                     path="/"
                     element={
                         <>
-                            <Hero />
-                            <About />
+                            <Intro />
                             <TechStack />
                             <Experience />
                             <Projects />
