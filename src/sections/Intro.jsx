@@ -1,4 +1,9 @@
 import React from "react";
+import TextType from '../components/ui/TextType';
+import RotatingText from '../components/ui/RotatingText'
+import { useRef } from 'react';
+
+
 
 const Intro = () => {
     return (
@@ -8,19 +13,38 @@ const Intro = () => {
         >
 
             <div className="flex flex-col gap-4 max-w-xl">
-                <h1 className="text-4xl md:text-6xl font-bold">
-                    Satya Aman
+                <h1 className="text-white text-4xl md:text-6xl font-bold">
+                    <TextType
+                        text={"SATYA AMAN"}
+                        typingSpeed={75}
+                        pauseDuration={4500}
+                        showCursor={false}
+                        cursorCharacter="|"
+                    />
                 </h1>
 
-                <h2 className="text-xl md:text-2xl font-medium text-gray-400">
-                    Shaping ideas into elegant, scalable, impactful code.
+                <h2 className="text-xl md:text-2xl font-medium text-white flex flex-wrap items-center">
+                    Shaping ideas into{" "}
+                    <RotatingText
+                        texts={['elegant', 'scalable', 'impactful']}
+                        mainClassName="inline-flex mx-2 px-2 sm:px-2 md:px-3 bg-[#0F0F11] text-white border border-white/10 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                        staggerFrom="last"
+                        initial={{ y: "100%" }}
+                        animate={{ y: 0 }}
+                        exit={{ y: "-120%" }}
+                        staggerDuration={0.025}
+                        splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                        transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                        rotationInterval={2000}
+                    />
+                    {" "}code.
                 </h2>
 
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed max-w-xl">
                     I am a Full Stack Developer specializing in MERN, Python, and modern
-                    web technologies. I love building apps that are fast, intuitive, and
-                    visually clean. Turning ideas into polished, production-ready products
-                    is what I enjoy the most.
+                    web technologies. I love building apps that are fast, intuitive,
+                    and visually clean. Turning ideas into polished, production-ready
+                    products is what I enjoy the most.
                 </p>
 
                 <div className="flex gap-6 mt-2">

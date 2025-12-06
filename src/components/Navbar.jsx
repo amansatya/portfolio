@@ -25,16 +25,10 @@ export default function Navbar({ className }) {
             )}
         >
             <Menu setActive={setActive}>
-                <MenuItem active={active} setActive={setActive} item="Home">
-                    <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="#home">Go to Home</HoveredLink>
-                    </div>
-                </MenuItem>
 
                 <MenuItem active={active} setActive={setActive} item="About">
                     <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="#about">Who I Am</HoveredLink>
-                        <HoveredLink href="#about">My Journey</HoveredLink>
+                        <HoveredLink href="#intro">Who I Am</HoveredLink>
                     </div>
                 </MenuItem>
 
@@ -48,7 +42,7 @@ export default function Navbar({ className }) {
 
                 <MenuItem active={active} setActive={setActive} item="Experience">
                     <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="#experience">Work Timeline</HoveredLink>
+                        <HoveredLink href="#experience">Journey</HoveredLink>
                         <HoveredLink href="#experience">Roles</HoveredLink>
                         <HoveredLink href="#experience">Achievements</HoveredLink>
                     </div>
